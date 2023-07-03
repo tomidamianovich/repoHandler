@@ -1,5 +1,8 @@
 #! /usr/bin/bash
 
+repositories_path=/home/tomas/repos/ui/;
+repository_name=$1;
+
 if [ ${#@} -ne 0 ] && [ "${@#"--help"}" = "" ]; then
   printf -- '...help...\n';
   exit 0;
@@ -13,9 +16,6 @@ if [ "$?" != "0" ]; then
   printf -- 'Exiting with code 127...\n';
   exit 127;
 fi;
-
-repositories_path=/home/tomas/repos/ui/;
-repository_name=$1;
 
 printf "\033c"
 
