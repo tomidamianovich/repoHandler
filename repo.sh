@@ -30,7 +30,7 @@ do
     ls $repositories_path
     echo -e "\n"
   else
-    echo -e "\n\033[32mAbriendo repositorio $repository_name \033[0m\n"
+    echo -e "\n\033[32mOpening repository $repository_name \033[0m\n"
   fi
 done
 
